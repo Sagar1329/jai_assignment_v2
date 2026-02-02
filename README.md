@@ -2,7 +2,7 @@
 
 ## Version 1
 
-This project involves the redesign and responsiveness fix for the Jamnagar Agro Industries website. The specific focus was on modernizing the UI, fixing layout issues on mobile/tablet devices, and ensuring a consistent user experience across the `About`, `Wholesale Spices`, and `Home` pages.
+This project involves the redesign and responsiveness fix for the Jamnagar Agro Industries website. The specific focus was on modernizing the UI, fixing layout issues on mobile/tablet devices, and ensuring a consistent user experience across the `About`, `Wholesale Spices`,`Brands`, and `Home` pages.
 
 ## Setup Instructions
 
@@ -59,3 +59,5 @@ https://github.com/Sagar1329/jai_assignment.git , you can access the complete se
 I really did not like the placholder images , so i removed them completely and made a web page without them , it's simple and responsive 
 
 **Additional Time spent :** Approximately 1-2 hour
+
+### **LIVE WORKING LINK:**  `` https://sagar1329.github.io/jai_assignment_v2/index.html``

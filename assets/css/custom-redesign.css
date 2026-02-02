@@ -1,0 +1,255 @@
+/* Custom Redesign CSS */
+
+:root {
+    --primary-green: #008A0E;
+    --dark-green: #004d00;
+    --accent-yellow: #fcc51b;
+    --text-dark: #1a1a1a;
+    --text-muted: #666;
+    --light-bg: #f8f9fa;
+    --gradient-primary: linear-gradient(135deg, #008A0E 0%, #00600a 100%);
+    --gradient-hero: linear-gradient(135deg, #005c09 0%, #008A0E 50%, #004d00 100%);
+    --gradient-overlay: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
+body {
+    color: var(--text-dark);
+}
+
+.devider {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-yellow);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.text-success {
+    color: var(--primary-green) !important;
+}
+
+/* Redesigned Hero Section */
+.hero-area {
+    background: var(--gradient-hero);
+    padding: 180px 0 120px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.hero-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-area .sub-title {
+    color: var(--accent-yellow);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-area h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-area p.lead {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.hero-btn {
+    padding: 15px 40px;
+    background: var(--accent-yellow);
+    color: #000;
+    font-weight: 700;
+    border-radius: 50px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #000;
+    background: #fff;
+}
+
+/* Inner Page Header */
+.page-header {
+    background: var(--gradient-hero);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+    /* Ensure text is white */
+}
+
+/* Section Styling Enhancements */
+.section-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header .sub-title {
+    color: var(--primary-green);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section-header .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+/* Cards and Stats */
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+    border-bottom: 4px solid var(--primary-green);
+    text-align: center;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.stat-card .label {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Process Steps */
+.process-step {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    background: var(--primary-green);
+}
+
+.process-step:hover h4,
+.process-step:hover p {
+    color: white;
+}
+
+.process-step h4 {
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Feature Grid (replacing big images) */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Values Card */
+.value-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.value-icon {
+    min-width: 50px;
+    height: 50px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero-area h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-area {
+        padding: 140px 0 80px;
+    }
+}
